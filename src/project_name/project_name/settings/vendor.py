@@ -1,15 +1,15 @@
 from .base import *
 
 MIDDLEWARE_CLASSES += (
-    'cms.middleware.utils.ApphookReloadMiddleware',
-    'cms.middleware.user.CurrentUserMiddleware',
-    'cms.middleware.page.CurrentPageMiddleware',
-    'cms.middleware.toolbar.ToolbarMiddleware',
-    'cms.middleware.language.LanguageCookieMiddleware'
+    #'cms.middleware.utils.ApphookReloadMiddleware',
+    #'cms.middleware.user.CurrentUserMiddleware',
+    #'cms.middleware.page.CurrentPageMiddleware',
+    #'cms.middleware.toolbar.ToolbarMiddleware',
+    #'cms.middleware.language.LanguageCookieMiddleware'
 )
 
 INSTALLED_APPS += (
-    'easy_thumbnails',
+    #'easy_thumbnails',
 )
 
 
@@ -90,10 +90,10 @@ CMS_PLACEHOLDER_CONF = {
 THUMBNAIL_PRESERVE_EXTENSIONS = ('png',)
 
 THUMBNAIL_PROCESSORS = (
-    'easy_thumbnails.processors.colorspace',
-    'easy_thumbnails.processors.autocrop',
-    'filer.thumbnail_processors.scale_and_crop_with_subject_location',
-    'easy_thumbnails.processors.filters'
+    #'easy_thumbnails.processors.colorspace',
+    #'easy_thumbnails.processors.autocrop',
+    #'filer.thumbnail_processors.scale_and_crop_with_subject_location',
+    #'easy_thumbnails.processors.filters'
 )
 
 # ==============================================================================
