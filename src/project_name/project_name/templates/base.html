@@ -1,0 +1,56 @@
+{% templatetag openblock %} load cms_tags menu_tags sekizai_tags %}
+{% templatetag openblock %} load staticfiles {% templatetag closeblock %}
+
+<!doctype html>
+<html class="no-js" lang="{{ LANGUAGE_CODE }}">
+  <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="{% templatetag openblock %} page_attribute "meta_description" {% templatetag closeblock %}" />
+    <meta name="keywords" content="{% templatetag openblock %} page_attribute "meta_keywords" {% templatetag closeblock %}" />
+
+    <title>Phone Rescue Starnberg | {% templatetag openblock %} block title {% templatetag closeblock %}{% templatetag openblock %} endblock title {% templatetag closeblock %}</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{% templatetag openblock %} static "assets/img/favicon/apple-touch-icon-57x57.png" {% templatetag closeblock %}"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="{% templatetag openblock %} static "assets/img/favicon/apple-touch-icon-114x114.png" {% templatetag closeblock %}"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="{% templatetag openblock %} static "assets/img/favicon/apple-touch-icon-72x72.png" {% templatetag closeblock %}"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="{% templatetag openblock %} static "assets/img/favicon/apple-touch-icon-144x144.png" {% templatetag closeblock %}"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="{% templatetag openblock %} static "assets/img/favicon/apple-touch-icon-120x120.png" {% templatetag closeblock %}"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="{% templatetag openblock %} static "assets/img/favicon/apple-touch-icon-152x152.png" {% templatetag closeblock %}"/>
+    <link rel="icon" type="image/png" href="{% templatetag openblock %} static "assets/img/favicon/favicon-196x196.png" {% templatetag closeblock %}" sizes="196x196" />
+    <link rel="icon" type="image/png" href="{% templatetag openblock %} static "assets/img/favicon/favicon-32x32.png" {% templatetag closeblock %}" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{% templatetag openblock %} static "assets/img/favicon/favicon-16x16.png" {% templatetag closeblock %}" sizes="16x16" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <link rel="shortcut icon" href="{% templatetag openblock %} static "assets/img/favicon/favicon.ico" {% templatetag closeblock %}">
+
+    <link rel="stylesheet" href="{% templatetag openblock %} static "css/screen.css" {% templatetag closeblock %}"/>
+
+    {% templatetag openblock %} block extra_head {% templatetag closeblock %}{% templatetag openblock %} endblock extra_head {% templatetag closeblock %}
+    {% templatetag openblock %} render_block "css" {% templatetag closeblock %}
+
+  </head>
+  <body id="top">
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    {% templatetag openblock %} cms_toolbar {% templatetag closeblock %}
+
+    {% templatetag openblock %} include "includes/header.html" {% templatetag closeblock %}
+
+    {% templatetag openblock %} block extra_body {% templatetag closeblock %}{% templatetag openblock %} endblock extra_body {% templatetag closeblock %}
+
+    {% templatetag openblock %} block base_content {% templatetag closeblock %}{% templatetag openblock %} endblock base_content {% templatetag closeblock %}
+
+    {% templatetag openblock %} include "includes/footer.html" {% templatetag closeblock %}
+
+    <script src="{% templatetag openblock %} static "js/site.bundle.js" {% templatetag closeblock %}"></script>
+
+    {% templatetag openblock %} render_block "js" {% templatetag closeblock %}
+
+  </body>
+</html>
