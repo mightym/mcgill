@@ -1,4 +1,4 @@
-{% templatetag openblock %} load cms_tags menu_tags sekizai_tags %}
+{% templatetag openblock %} load cms_tags menu_tags sekizai_tags {% templatetag closeblock %}
 {% templatetag openblock %} load staticfiles {% templatetag closeblock %}
 
 <!doctype html>
@@ -12,13 +12,13 @@
     <meta name="keywords" content="{% templatetag openblock %} page_attribute "meta_keywords" {% templatetag closeblock %}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="{% templatetag openblock %}static "assets/img/favicon/apple-touch-icon.png" {% templatetag closeblock %}">
-    <link rel="icon" type="image/png" href="{% templatetag openblock %}static "assets/img/favicon/favicon-32x32.png" sizes="32x32" {% templatetag closeblock %}">
-    <link rel="icon" type="image/png" href="{% templatetag openblock %}static "assets/img/favicon/favicon-16x16.png" sizes="16x16" {% templatetag closeblock %}">
-    <link rel="manifest" href="{% templatetag openblock %}static "assets/img/favicon/manifest.json" {% templatetag closeblock %}">
-    <link rel="shortcut icon" href="{% templatetag openblock %}static "assets/img/favicon/favicon.ico" {% templatetag closeblock %}">
-    <link rel="mask-icon" href="{% templatetag openblock %}static "assets/img/favicon/safari-pinned-tab.svg" {% templatetag closeblock %}" color="#333333">
-    <meta name="msapplication-config" content="{% templatetag openblock %}static "assets/img/favicon/browserconfig.xml" {% templatetag closeblock %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% templatetag openblock %} static "assets/img/favicon/apple-touch-icon.png" {% templatetag closeblock %}">
+    <link rel="icon" type="image/png" href="{% templatetag openblock %} static "assets/img/favicon/favicon-32x32.png" sizes="32x32" {% templatetag closeblock %}">
+    <link rel="icon" type="image/png" href="{% templatetag openblock %} static "assets/img/favicon/favicon-16x16.png" sizes="16x16" {% templatetag closeblock %}">
+    <link rel="manifest" href="{% templatetag openblock %} static "assets/img/favicon/manifest.json" {% templatetag closeblock %}">
+    <link rel="shortcut icon" href="{% templatetag openblock %} static "assets/img/favicon/favicon.ico" {% templatetag closeblock %}">
+    <link rel="mask-icon" href="{% templatetag openblock %} static "assets/img/favicon/safari-pinned-tab.svg" {% templatetag closeblock %}" color="#333333">
+    <meta name="msapplication-config" content="{% templatetag openblock %} static "assets/img/favicon/browserconfig.xml" {% templatetag closeblock %}">
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="{% templatetag openblock %} static "css/screen.css" {% templatetag closeblock %}"/>
