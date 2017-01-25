@@ -64,7 +64,7 @@ WSGI_APPLICATION = '{{ project_name|lower }}.wsgi.application'
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'de'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'Europe/Berlin'
 
@@ -126,6 +126,7 @@ MIDDLEWARE_CLASSES = [
 ]
 
 INSTALLED_APPS = [
+    'djangocms_admin_style',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',

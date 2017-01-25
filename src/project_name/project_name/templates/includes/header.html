@@ -1,0 +1,108 @@
+{% load staticfiles %}
+{% load cms_tags %}
+
+<header class="page-header">
+  <!-- RD Navbar -->
+  <div class="rd-navbar-wrap">
+    <nav class="rd-navbar" data-rd-navbar-lg="rd-navbar-static">
+      <div class="rd-navbar-inner">
+        <!-- RD Navbar Panel -->
+        <div class="rd-navbar-panel">
+
+          <!-- RD Navbar Toggle -->
+          <!-- RD Navbar Toggle -->             <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar"><span></span></button>             <!-- END RD Navbar Toggle -->                <!-- RD Navbar Toggle -->             <button class="collapse" data-rd-navbar-toggle=".collapse-item"></button>             <div class="collapse-item">               <a class="panel-tel" href="callto:#">1-800-1234-567</a>               <a href="#" class="btn btn-banana  ">Free consultation</a>             </div>             <!-- END RD Navbar Toggle -->
+          <!-- END RD Navbar Toggle -->
+
+
+
+          <!-- RD Navbar Brand -->
+          <div class="rd-navbar-brand">
+            <a href="index.html" class="brand-name">
+              <span class="hidden-lg">Phone Rescue</span>
+              <img class="hidden visible-lg-block" src="{% static "assets/img/logo.png" %}" width="249" height="71" alt="">
+            </a>
+          </div>
+          <!-- END RD Navbar Brand -->
+
+          <a class="panel-tel" href="tel:+49 8151 750 22 94">+49 8151 750 22 94</a> <a class="panel-tel panel-whatsapp" href="tel:+49 8151 750 22 94">+49 8151 750 22 94</a>
+
+          <a href="tel:+49 8151 750 22 94" class="btn btn-banana btn-aylen btn-aylen-mod">Anrufen</a>
+
+        </div>
+        <!-- END RD Navbar Panel -->
+
+        <div class="rd-navbar-nav-wrap">
+
+          <!-- RD Navbar Nav -->
+          <ul class="rd-navbar-nav">
+            <li class="active">
+              <a href="index.html">Phone Rescue</a>
+            </li>
+            <li>
+              <a href="index-1.html">Preise</a>
+
+            </li>
+            <li>
+              <a href="index-2.html">Reparatur</a>
+
+              <!-- RD Navbar Dropdown -->
+              <ul class="rd-navbar-dropdown">
+                <li>
+                  <a href="index-6.html">iPhone</a>
+                  <ul class="rd-navbar-dropdown">
+                    <li>
+                      <a href='#'>Preise</a>
+                    </li>
+                    <li>
+                      <a href='#'>Schäden</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="index-7.html">Samsung</a>
+                  <ul class="rd-navbar-dropdown">
+                    <li>
+                      <a href='#'>Preise</a>
+                    </li>
+                    <li>
+                      <a href='#'>Schäden</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="index-8.html">Microsoft</a>
+                </li>
+                <li>
+                  <a href="index-9.html">HTC</a>
+                </li>
+                <li>
+                  <a href="index-10.html">LG</a>
+                </li>
+                <li>
+                  <a href="index-11.html">Sony</a>
+                </li>
+              </ul>
+              <!-- END RD Navbar Dropdown -->
+            </li>
+            <li>
+              <a href="index-3.html">News</a>
+            </li>
+            <li>
+              <a href="index-4.html">Kontakt</a>
+            </li>
+          </ul>
+          <!-- END RD Navbar Nav -->
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- END RD Navbar -->
+
+  <!-- Swiper -->
+  <section class="rd-parallax rd-parallax-swiper custom">
+    <div class="rd-parallax-layer" data-speed="0" data-md-speed=".3" data-type="html">
+    {% placeholder "header_slider" %}
+    </div>
+  </section>
+  <!-- END Swiper -->
+</header>

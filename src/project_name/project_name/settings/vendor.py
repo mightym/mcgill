@@ -9,7 +9,19 @@ MIDDLEWARE_CLASSES += (
 )
 
 INSTALLED_APPS += (
-    #'easy_thumbnails',
+    # 'cms',
+    # 'menus',
+    # 'sekizai',
+    # 'treebeard',
+    # 'djangocms_text_ckeditor',
+    # 'filer',
+    # 'easy_thumbnails',
+    # 'cmsplugin_filer_image',
+    # 'cmsplugin_filer_file',
+    # 'cmsplugin_filer_folder',
+    # 'cmsplugin_filer_teaser',
+    # 'cmsplugin_filer_utils',
+    # 'cmsplugin_filer_video',
 )
 
 
@@ -57,27 +69,17 @@ detail_placeholder_conf = {
 CMS_PLACEHOLDER_CONF = {
     'hero_stage': {
         'plugins': [
-            'HeroStagePlugin'
+            'MyPlugin'
         ]
     },
     'content': {
         'plugins': [
-            'SliderStagePlugin',
-            'TeaserSliderStagePlugin',
-            'TileStagePlugin',
-            'TextBlockPlugin',
-            'ImageBlockPlugin',
-            'TeaserGridPlugin',
+            'MyPlugin',
         ],
     },
     'teaser_row': {
         'plugins': [
-            'SliderStagePlugin',
-            'TeaserSliderStagePlugin',
-            'TileStagePlugin',
-            'TextBlockPlugin',
-            'ImageBlockPlugin',
-            'TeaserGridPlugin',
+            'MyPlugin',
         ],
     },
     'project_plugins': detail_placeholder_conf

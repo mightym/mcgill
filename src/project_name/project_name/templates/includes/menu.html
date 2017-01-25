@@ -1,0 +1,10 @@
+<div class="menu-toggle wrapper"><div class="menu-toggle-button icon-burger" data-grunticon-embed></div></div>
+<div class="menu-content wrapper">
+  <nav>
+    <ul>
+      {% for val in conf.data.pages %}
+      <li><a href="{{ val.link }}"{% if loop.first %} class="active"{% endif %}>{{ val.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
